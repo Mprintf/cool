@@ -1,3 +1,9 @@
+thread_pool:thread_pool.cpp
+	g++ $^ -o $@ -lpthread
+product_consumer:product_consumer.cpp
+	g++ $^ -o $@ -lpthread
+sem:sem.c
+	g++ $^ -o $@ -lpthread
 pro_con:pro_con.cpp
 	g++ $^ -o $@ -lpthread
 cond:cond.c
